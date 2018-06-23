@@ -2,6 +2,7 @@
 
 """
 python运算符
+
     算术运算符
     下面以a=10 ,b=20为例进行计算
     运算符	描述	实例
@@ -13,75 +14,100 @@ python运算符
     %	取余	返回除法的余数 b % a 输出结果 0
     **	幂	返回x的y次幂 a**b 为10的20次方， 输出结果 100000000000000000000
 
+    赋值运算符
+    运算符	描述	        实例
+    =	    赋值运算符	把=号右边的结果给左边的变量 num=1+2*3 结果num的值为7
+
+    复合赋值运算符
+
+    运算符	描述	                实例
+    +=	    加法赋值运算符	        c += a 等效于 c = c + a
+    -=	    减法赋值运算符	        c -= a 等效于 c = c - a
+    *=	    乘法赋值运算符	        c *= a 等效于 c =       c * a
+    /=	    除法赋值运算符	        c /= a 等效于 c = c / a
+    %=	    取模赋值运算符	        c %= a 等效于 c = c % a
+    **=	    幂赋值运算符	        c **= a 等效于 c = c ** a
+    //=	    取整除赋值运算符	    c //= a 等效于 c = c // a
+
+
+
+
 """
 
+a = 10
+b = 20
 
-a = 1;
-b = 2;
-c = 3.1;
-d = 23.3;
-e = True;
-f = False;
-g = "";
-h = ["","",""];
-name = "james hello james kobe";
-print("hello%s"%name);
-print(len(name))
-print(name[1:3])
-print(name[1:])
-print(name[1:-1])
 
-print(name.find('aa',0,len(name)))
-print(name.index('a',0,len(name)))
-print(name.count('james',0,len(name)))
-print(name.replace('james','JAMES',1))
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
 
-print(name.split(" "))
-print(name.split(" ",2))
+c, d = 2, 5
+print(c,d)
 
-print(name.capitalize())
-print(name.title())
-print(name.startswith("ja"))
-print(name.endswith("b"))
 
-print(name.lower())
-print(name.upper())
 
-print(name.ljust(30))
-print(name.rjust(30))
-print(name.center(50))
-print(name.rfind('d'))
-print(name.rindex('o'))
-print(name.isalpha())
-print(name.join("0"))
-
-nameList = ['aaa','bbb','ccc']
-print(nameList[1])
-
-for n in nameList:
-    print(n)
-
-print('---------------')
-nameList.append("ddd")
-print(len(nameList))
-if 'ddd' in nameList:
-    print(True)
-
-if 'ddd' not in nameList:
-    print(False)
-else:
-    print(True)
-
-nameList.append('aaa')
-print(nameList)
-print(nameList.index('aaa'))
-print(nameList.count('aaa'))
-
-del nameList[0]
-print(nameList)
-print(nameList.pop())
-print(nameList)
-print(nameList.remove('bbb'))
-print(nameList)
-print(nameList.reverse())
-print(nameList.sort())
+# name = "james hello james kobe";
+# print(len(name))
+# print(name[1:3])
+# print(name[1:])
+# print(name[1:-1])
+#
+# print(name.find('aa',0,len(name)))
+# print(name.index('a',0,len(name)))
+# print(name.count('james',0,len(name)))
+# print(name.replace('james','JAMES',1))
+#
+# print(name.split(" "))
+# print(name.split(" ",2))
+#
+# print(name.capitalize())
+# print(name.title())
+# print(name.startswith("ja"))
+# print(name.endswith("b"))
+#
+# print(name.lower())
+# print(name.upper())
+#
+# print(name.ljust(30))
+# print(name.rjust(30))
+# print(name.center(50))
+# print(name.rfind('d'))
+# print(name.rindex('o'))
+# print(name.isalpha())
+# print(name.join("0"))
+#
+# nameList = ['aaa','bbb','ccc']
+# print(nameList[1])
+#
+# for n in nameList:
+#     print(n)
+#
+# print('---------------')
+# nameList.append("ddd")
+# print(len(nameList))
+# if 'ddd' in nameList:
+#     print(True)
+#
+# if 'ddd' not in nameList:
+#     print(False)
+# else:
+#     print(True)
+#
+# nameList.append('aaa')
+# print(nameList)
+# print(nameList.index('aaa'))
+# print(nameList.count('aaa'))
+#
+# del nameList[0]
+# print(nameList)
+# print(nameList.pop())
+# print(nameList)
+# print(nameList.remove('bbb'))
+# print(nameList)
+# print(nameList.reverse())
+# print(nameList.sort())
