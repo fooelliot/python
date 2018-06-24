@@ -41,29 +41,6 @@ nameb = ['java', "python", "scala", "js"]
 # del nameList[1]
 # nameList.sort(reverse=True)
 
-ageList = (12,23,43)
-print(ageList[1])
-info = {'name':"zhangsan","age":12,"address":"guangdong"}
-print(info)
-print(info.get("names", "james"))
-info["name"] = "lisi"
-print(info)
-info["bir"] = "2020"
-print(info)
-
-
-# del info["name"]
-# del info
-print("===")
-print(info)
-print(info.keys())
-print(info.values())
-print(len(info))
-print(info.items())
-print()
-max(1,3)
-
-
 
 stu_a = {        "name":"A",        "age":21,        "gender":1,        "hometown":"aaa" }
 stu_b = {        "name":"B",        "age":22,        "gender":0,        "hometown":"bbb" }
