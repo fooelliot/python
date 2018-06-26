@@ -1,5 +1,7 @@
 # coding:utf-8
 
+import os
+
 """
 python 的文件操作
 在python，使用open函数，可以打开一个已经存在的文件，或者创建一个新文件
@@ -102,4 +104,22 @@ ab+	        以二进制格式打开一个文件用于追加。如果该文件�
 #     old_file.close()
 #     new_file.close()
 
+# 重命名文件
+# os.rename("../hello.txt", "../words.sh")
 
+# 删除文件
+# os.remove("../words.sh")
+
+# 创建文件夹
+# os.mkdir("hello")
+#
+# print(os.getcwd())
+
+# 改变默认目录
+os.chdir("../")
+
+# 获取目录列表
+# os.listdir("./")
+
+# 删除文件夹
+# os.rmdir("张三")
