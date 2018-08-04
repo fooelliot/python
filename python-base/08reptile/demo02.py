@@ -5,6 +5,8 @@ python 爬虫案例
 
 """
 
+import random
+import urllib
 import urllib.request
 
 url = "http://www.baidu.com/"
@@ -18,16 +20,11 @@ ua_list = [
     "User-Agent:Mozilla/5.0(Macintosh;IntelMacOSX10_7_0)AppleWebKit/535.11(KHTML,likeGecko)Chrome/17.0.963.56Safari/535.11"
 ]
 
+user_agent = random.choice(ua_list)
+print(user_agent)
 
+request = urllib.request.Request(url)
+request.add_header("User-Agent", user_agent)
 
-
-user_agent = "Mozilla/4.0(compatible; MSIE 5.5 Windows NT)"
-request = urllib.request.Request(url, headers={'User-agent': 'Mozilla/4.0(compatible; MSIE 5.5 Windows NT)'})
-response = urllib.request.urlopen(url)
-content = response.read().decode("utf-8")
-print(content)
-kw = "中国"
-print(urllib.parse.quote(kw))
-key = urllib.parse.quote({"kw": kw})
-# %e4%b8%ad%e5%9b%bd
-# %E4%B8%AD%E5%9B%BD
+# 第一个字符大小其余必须小写
+print(request.get_header("User-agent"))
